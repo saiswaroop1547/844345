@@ -1,0 +1,30 @@
+package unit;
+
+import org.junit.jupiter.api.AfterEach;
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Test;
+
+public class JunitExample
+{
+	@Test
+	public void test1()
+	{
+		System.out.println("this is my testcase1");
+	}
+	@BeforeEach
+	public void display()
+	{
+		System.out.println("this is my before");
+	}
+	@Test
+	public void test2()
+	{
+		System.out.println("this is my testcase2");
+	}
+	@AfterEach
+	public void show()
+	{
+		System.out.println("this is my After");
+	}
+	
+}

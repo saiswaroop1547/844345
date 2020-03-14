@@ -1,0 +1,12 @@
+package unit;
+
+
+
+public class JunitExample
+{
+	@Test
+	public void test1()
+	{
+		System.out.println("this is my testcase1");
+	}
+}

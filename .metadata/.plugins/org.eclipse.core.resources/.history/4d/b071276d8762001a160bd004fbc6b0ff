@@ -1,0 +1,28 @@
+package practice;
+
+import java.util.Scanner;
+public class Authority
+{
+    public static void main(String[] args) 
+    {
+        String a, b, c;
+        Scanner s = new Scanner(System.in);
+        System.out.println("Inmate's name:");
+        a = s.nextLine();
+        System.out.println("Inmate's father's name:");
+        b = s.nextLine();
+        if(int i=0;i<a.length();i++)
+        {
+            if()
+        }
+        Authority obj = new  Authority();
+        c = obj.concat(a, b);
+        System.out.println(c);
+    }
+    String concat(String x, String y)
+    {
+        String z;
+        z = x + " " + y;
+        return z;
+    }
+}

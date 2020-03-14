@@ -1,0 +1,9 @@
+package UnitTest;
+
+public class HelloWorld 
+{
+	public void Message()
+	{
+		
+	}
+}

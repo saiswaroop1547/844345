@@ -1,0 +1,10 @@
+package UnitTest;
+
+public class HelloWorld 
+{
+	public String Message()
+	{
+		return Message;
+		
+	}
+}

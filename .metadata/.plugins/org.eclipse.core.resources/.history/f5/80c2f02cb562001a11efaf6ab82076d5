@@ -1,0 +1,29 @@
+package practice;
+
+import java.util.Scanner;
+
+class Main
+{
+   public static <Employee> void main(String[] args)
+    {
+        Scanner sc=new Scanner(System.in);
+
+        System.out.println("Enter id");
+        int id=sc.nextInt();
+        System.out.println("Enter name");
+        sc.nextLine();
+        String name=sc.nextLine();
+        System.out.println("Enter salary");
+        double salary=sc.nextDouble();
+
+        Employee e1= Employee.getEmployeeDetails( id, name, salary );
+        System.out.println("Enter pfpercentage");
+        Employee.getPFPercentage(sc.nextInt());
+
+        System.out.println("Id :"+((Empolyee) e1).getEmployeeId());
+        System.out.println("name :"+((Empolyee) e1).getEmployeeName());
+        System.out.println("salary :"+((Empolyee) e1).getSalary());
+        System.out.println("Net salary :"+((Empolyee) e1).getNetSalary());
+    }
+
+}

@@ -1,0 +1,12 @@
+package UnitTest;
+
+public class HelloWorld 
+{
+	private static final String Message = null;
+
+	public String Message()
+	{
+		return Message;
+		
+	}
+}

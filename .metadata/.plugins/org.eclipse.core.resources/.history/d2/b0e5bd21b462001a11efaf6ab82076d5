@@ -1,0 +1,58 @@
+package practice;
+
+public class Empolyee {
+    private int employeeId;
+    private String employeeName;
+    private double salary;
+    private double netSalary;
+
+    public static Empolyee instances= new Empolyee();
+
+    public int getEmployeeId() {
+        return employeeId;
+    }
+
+    public String getEmployeeName() {
+        return employeeName;
+    }
+
+    public double getSalary() {
+        return salary;
+    }
+
+    public double getNetSalary() {
+        return netSalary;
+    }
+
+    public void setEmployeeId(int employeeId) {
+        this.employeeId = employeeId;
+    }
+
+    public void setEmployeeName(String employeeName) {
+        this.employeeName = employeeName;
+    }
+
+    public void setSalary(double salary) {
+        this.salary = salary;
+    }
+
+    public void setNetSalary(double netSalary) {
+        this.netSalary = netSalary;
+    }
+    public void calculateNetSalary(int pfpercentage) {
+        instances.netSalary=(instances.salary)*(1-(((double)pfpercentage)/100));
+
+    }
+    public static Empolyee getEmployeeDetails(int id, String name,double salary) {
+
+        instances.setEmployeeId(id);
+        instances.setEmployeeName(name);
+        instances.setSalary(salary);
+        return instances;
+    }
+
+    public static int getPFPercentage(int pfpercentage)
+    { instances.calculateNetSalary(pfpercentage);
+     return pfpercentage;  
+    }
+}

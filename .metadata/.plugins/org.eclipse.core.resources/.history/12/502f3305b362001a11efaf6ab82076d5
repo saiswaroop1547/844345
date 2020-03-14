@@ -1,0 +1,10 @@
+package practice;
+
+public class empolyee {
+
+	
+	private int employeeId;
+	private String employeeName;
+	private double salary;
+	private double netSalar;
+}
